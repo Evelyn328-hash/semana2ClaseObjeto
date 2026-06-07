@@ -22,5 +22,10 @@ class CuentaBancaria:
 
     def mostrar_saldo(self):
         print(f"El saldo actual de la cuenta de {self.titular} es: {self.saldo}")
+# Ejemplo de uso
+cuenta = CuentaBancaria("Evelyn Montes", 3000)
 
- 
+cuenta.mostrar_saldo()
+cuenta.depositar(2000)
+cuenta.retirar(1500)
+cuenta.mostrar_saldo()
